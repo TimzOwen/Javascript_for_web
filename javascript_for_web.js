@@ -174,3 +174,69 @@ var myStr = "You can develop mobile apps ";
 myStr += someAdjective;
 
 //finding Lengths os Strings character
+// Finding lenghts of characters in js 
+var firstNameLength = 0;
+var firstName = "Ada";
+firstNameLength = firstName.length;
+
+// Setup
+var lastNameLength = 0;
+var lastName = "Lovelace";
+lastNameLength = lastName.length;
+
+//bracket notation to find the first char in a string
+//used the indexing array starting from 0
+var firstLetterOfFirstName = "";
+var firstName = "Ada";
+firstLetterOfFirstName = firstName[0];
+
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+firstLetterOfLastName = lastName[0];
+
+var firstCharName = " ";
+var theNameis = "Owen";
+firstCharName = theNameis[0]; // print O as the 1st char 
+
+//String immutabiltiy(Strings once created cannot be modified);
+//unless you reassign the content of the var you cannot change and individual char
+var myStr = "Jello World";
+myStr = "Hello World"; 
+console.log(myStr); 
+
+//using bracket notation to find the Nth char in a string 
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1];
+
+var lastName = "Lovelace";
+var thirdLetterOfLastName = lastName[2];
+console.log(thirdLetterOfLastName)
+
+//using bracket notation to find the last char in a string
+// Example
+var firstName = "Ada";
+var lastLetterOfFirstName = firstName[firstName.length - 1];
+
+var lastName = "TimzOwenisAcoder";
+var lastLetterOfLastName = lastName[lastName.length-1];
+console.log(lastLetterOfLastName); //prints r
+
+//Use Bracket Notation to Find the Nth-to-Last Character in a String
+// Example
+var firstName = "AdamOwen";
+var thirdToLastLetterOfFirstName = firstName[firstName.length - 5];
+console.log(thirdToLastLetterOfFirstName);
+
+var lastName = "LovelaceNotForOwen";
+var secondToLastLetterOfLastName = lastName[lastName.length-2];
+console.log(secondToLastLetterOfLastName);
+
+//WorldBlanks in javaScript. Uses String contatenation to form the puzzles and filling in the questions
+var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
+
+var wordBlanks = "My " + myNoun + " is very " + myAdjective + " and it can " + myVerb + " very " + myAdverb + " than me";
+
+//Javascript Arrays of storing more than one String in a variables

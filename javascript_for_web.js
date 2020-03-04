@@ -360,4 +360,175 @@ var myList = [
 console.log(myList);
 
 UPNEXT: WRITING REUSABLE CODE WITH JS FUNCTIONS;
+//WRITING REUSABLE CODES IN JS WITH FUNCTIONS;
+//Functions are reusable parts in Js where we call a function mutliple times and still executes the same code;
+//Let's get started with simple hello world Function;
+//Next, Passing values to functions with parameters 
+//Next, Global scope n Function, local varibales are defined within a fn, global def on top of fn and can be called everywhere
+//global vs local: the local varibales always takes precedence over global var changing their values;
+//returning a value from a function; using return to send back a value from the function. pass values into args of fns n return value 
+//undefined Value returned from a function; on processing it the fn processes inner code but the returned value is undefined;
+//Assignment with return values; returning a function and using the assignment operator to set new var from the fn result;
+function ourReusableFunction() {
+  console.log("Hey, I am reusable function, call me");
+}
+ourReusableFunction(); // Hey, I am reusable function, call me
+
+function reusableFunction(){
+  console.log("Hello World, simple Function");
+}
+reusableFunction(); //Hello World, simple Function
+
+
+//parameters & arguments
+function ourFunctionWithArgs(a, b) {
+  console.log(a - b);
+}
+ourFunctionWithArgs(10, 5); // Outputs 5
+
+
+function functionWithArgs(a,b){
+  console.log(a+b);
+}
+functionWithArgs(4,5);
+
+function fnWithArgs(name,age){
+  console.log("Your name is " + name + " and you are " + age + " Years old");
+}
+fnWithArgs("Owen", 22);
+
+function simpleMultiplication(c,d){
+  console.log("The results is: " + (c*d));
+}
+simpleMultiplication(10,5);
+
+
+//Global var in Functions
+var myGlobal = 10; //global
+
+function fun1() {
+  oopsGlobal = 5; //local
+
+}
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
+
+//Local scope
+function myLocalScope() {
+  'use strict';
+var myVar = 10;
+  console.log(myVar);
+}
+myLocalScope(); // 10
+
+
+function innerVariable(){
+  var name = "Owen";
+  console.log(name);
+}
+innerVariable(); //Owen
+
+console.log(myVar); // var not defined
+console.log(name);// name not defined
+
+//global vs Local;
+var someVar = "Food";
+function myFun() {
+  var someVar = "cars";
+  return someVar; // cars and not food
+}
+
+var outerWear = "T-Shirt";
+function myOutfit() {
+var outerWear = "sweater";
+  return outerWear;
+}
+
+console.log(myOutfit()); //sweater
+
+var animals = "Cows";
+function animalsChangedByLocalScope(){
+  var animals = "goats";
+    return animals;
+}
+console.log(animalsChangedByLocalScope()); //goats
+
+//return function;
+function minusSeven(num) {
+  return num - 7;
+}
+console.log(minusSeven(10)); //3
+
+function plusTen(num){
+  return num + 10;
+}
+console.log(plusTen(10)); // 20
+
+function timesFive(num){
+  return num * 5
+}
+console.log(timesFive(10)); // 50
+
+function plusThree(num) {
+  return num + 3;
+}
+var answer = plusThree(5); // 8
+
+
+//Undefined values from a return fn
+var sum = 0;
+function addSum(num) {
+  sum = sum + num;
+  //no return fn
+}
+console.log(addSum(3)); //undefined
+
+var sum = 0;
+function addThree() {
+  sum = sum + 3;
+}
+function addFive(){
+  sum += 5;
+}
+console.log(addThree()); //undefined
+console.log(addFive()); //undefined
+
+
+//assgnment operator;
+var changed = 0;
+function change(num) {
+  return (num + 5) / 3;
+}
+changed = change(10);
+console.log(changed); // 5
+
+var processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = console.log(processArg(7));
+
+var newFnNameReturned = "Owen Code Ninja";
+function newVarNamefunction(name){
+  return name + " is " + 22 + " years Old";
+}
+newFnNameReturned = console.log(newVarNamefunction("Timz Owen"));
+
+var bankBalance = 0;
+function checkBalance(amount){
+  return (amount += 800)/2;
+}
+bankBalance = console.log(checkBalance(200)); //500
+
+// UPNEXT: STAND IN LINE;
 

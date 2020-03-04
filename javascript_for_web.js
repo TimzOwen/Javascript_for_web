@@ -347,4 +347,17 @@ console.log(myArray); // ['CS',41]
 myArray.unshift(["Sean", 42]);
 console.log(myArray); // [['Sean',42],['CS',41]]
 
-//UPNEXT ON LIST
+//CHALLENGE:
+//create your shopping List of items, it must contain atLeast 5sub-arrays with atleast two elements in each array
+var myList = [
+    ["computer",1],
+    ["Bar Soaps",2],
+    ["Trousers",5],
+    ["shirts",10],
+    ["Keyboard",2],
+    ["Desktop Computers",3]
+];
+console.log(myList);
+
+UPNEXT: WRITING REUSABLE CODE WITH JS FUNCTIONS;
+

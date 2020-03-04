@@ -239,4 +239,112 @@ var myAdverb = "quickly";
 
 var wordBlanks = "My " + myNoun + " is very " + myAdjective + " and it can " + myVerb + " very " + myAdverb + " than me";
 
-//Javascript Arrays of storing more than one String in a variables
+//Javascript Arrays of storing more than one String in a variables//ARRAYS:we shall cover;
+//Javascript Arrays of storing more than one String in a variable;
+//Multidimentional arrays(2D Arrays ) 
+//accessing elements of an array
+//modifying elements in an arrays
+//accessing 2D arrays with indexing
+//appending arrays with .push() function //adds to the last part 
+//removing last elements with .pop() function 
+//manipulating arrays with .shift() function //Removes first element
+//manipulating with .unshift() function //adding elements from the front;
+var ourArray = ["John", 23];
+var myArray = ["Owen", 22];
+
+//2D arrays 
+var students = [
+["kabarak university", 20, "computer science"],
+["Kabarak Primary", 420, "cool Kids"]
+]];
+
+//accessing
+var ourArray = [50, 60, 70];
+var ourData = ourArray[0]; // equals 50
+
+var myArray = [50, 60, 70];
+var myData = myArray[0];
+
+//modify
+var ourArray = [18, 64, 99];
+ourArray[1] = 45; // ourArray now equals [18,45,99].
+
+var myArray = [18, 64, 99];
+myArray[0] = 45;
+console.log(myArray); //45, 64, 99
+
+//2D indexing access
+var myArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [
+        [10, 11, 12],
+        13, 14
+    ]
+];
+
+// Only change code below this line
+var myData = myArray[2][1];
+console.log(myData); //8
+myData = myArray[3][0][2]; //12
+
+//push
+var ourArray = ["Owen", "Kabarak", "cs"];
+ourArray.push(["final year", "Eldohub"]);
+console.log(ourArray); //owen,kabarak,cs,final year,Eldohub
+
+var myArray = [
+    ["John", 23],
+    ["cat", 2]
+];
+myArray.push(["dog", 3]);
+console.log(myArray); //['John',23]['cat'2]['dog',3]
+
+//.pop();
+var threeArrys = [1, 4, 6];
+var oneDown = threeArrys.pop();
+console.log(oneDown); // Returns 6
+console.log(threeArrays); // Returns [1, 4] 
+
+var ourArray = [1, 2, 3];
+var removedFromOurArray = ourArray.pop();
+// now equals 3, and ourArray now equals [1,2]
+console.log(removedFromOurArray); //3
+
+var myArray = [
+    ["John", 23],
+    ["cat", 2]
+];
+var removedFromMyArray = myArray.pop();
+console.log(removedFromMyArray); //['cat',2]
+
+//manipulating arrays .shift()
+var ourArray = ["Stimpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+//now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+
+var myArray = [
+    ["Owen", 22],
+    ["Kabarak", 41]
+];
+var removedFromMyArray = myArray.shift();
+console.log(removedFromMyArray); // ['Owen',22];
+console.log(myArray); //['Kabarak',41];
+
+//unshifting
+var ourArray = ["Captain", "O", "pilot"];
+ourArray.shift(); //["O", "Pilot"]
+ourArray.unshift("Happy");
+console.log(ourArray); //["Happy", "O", "Pilot"]
+
+var myArray = [
+    ["Owen", 22],
+    ["CS", 41]
+];
+myArray.shift();
+console.log(myArray); // ['CS',41]
+myArray.unshift(["Sean", 42]);
+console.log(myArray); // [['Sean',42],['CS',41]]
+
+//UPNEXT ON LIST

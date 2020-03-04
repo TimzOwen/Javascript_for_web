@@ -531,4 +531,102 @@ function checkBalance(amount){
 bankBalance = console.log(checkBalance(200)); //500
 
 // UPNEXT: STAND IN LINE;
+//This works similar to Queues and stacks in computer sciece;
+//Boolean Values:  True/fals , on/off 1/0 
+//Conditional statements with if logic (used to make decisions) 
+//comparison with equality operator (uses equal sign to do comaprison between operators);
+//comaparison with the strict equality operator; (===) has no type of conversion unlke == where we can compare ints n strings by converting them to strings
+//practise comparing different values === & == in one function . conversioncacn happens using .typeOf Function.
+ function nextInLine(arr, item) {
+  arr.push(item);
+  return arr.shift();
+}
+var testArr = [1,2,3,4,5];
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 8));
+console.log("After: " + JSON.stringify(testArr));
 
+
+//boolean
+function welcomeToBooleans() {
+  return true; 
+}
+console.log(welcomeToBooleans()); // Reurns true
+
+//if statements
+//Ex1
+function test (myCondition) {
+  if (myCondition) {
+     return "It was true";
+  }
+  return "It was false";
+}
+test(true);  // returns "It was true"
+test(false); // returns "It was false"
+
+// Ex2
+function ourTrueOrFalse(isItTrue) {
+  if (isItTrue) {
+    return "Yes, it's true";
+  }
+  return "No, it's false";
+}
+console.log(ourTrueOrFalse(true));
+
+//ex3
+function trueOrFalse(wasThatTrue) {
+if(wasThatTrue){
+  return "Yes, that was true";
+}
+return "No, that was false";
+}
+
+console.log(trueOrFalse(false));
+
+//comparison
+//Ex1
+function equalityTest(myVal) {
+  if (myVal == 10) {
+     return "Equal";
+  }
+  return "Not Equal";
+}
+// Ex2
+function testEqual(val) {
+  if (val==12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+console.log(testEqual(10));
+//Ex3
+function comapreTwoVal(nums){
+  if(nums == 50){
+    return "Equal to 50";
+  }
+  return "Not equal to 500";
+}
+console.log(comapreTwoVal(50));
+
+
+//Strict comparison:
+
+function testStrict(val) {
+  if (val === 7) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+console.log(testStrict(7)); //Equal
+
+
+function strictTestNotSameType(num){
+  if(num===10){
+    return "strictly equal";
+  }
+  return "Not strictly Eqaul";
+}
+console.log(strictTestNotSameType("10")); // Not eqal
+
+
+//practise comapring comparisons 

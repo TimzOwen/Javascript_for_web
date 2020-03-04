@@ -630,3 +630,141 @@ console.log(strictTestNotSameType("10")); // Not eqal
 
 
 //practise comapring comparisons 
+// comparison 
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+compareEquality(10, "10"); //not strictly equal. diff types
+
+//comparison with inequality operator
+//1 !=  2     // true
+//1 != "1"    // false
+//1 != '1'    // false
+//1 != true   // false
+//0 != false  // false
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+console.log(testNotEqual(10)); //not equal
+
+function notEqualTest(a,b){
+  if(a!=b){
+    return "Not equal";
+  }
+  return "Equal";
+}
+console.log(notEqualTest(10,'10')); //Equal
+
+//comparison with strict inequality operator:
+// 3 !==  3    false
+// 3 !== '3'   true
+// 4 !==  3    true
+function testStrictNotEqual(val) {
+  if (val !== 17) { 
+    return "Not Equal";
+  }
+  return "Equal";
+}
+console.log(testStrictNotEqual(10));
+
+
+function checkStrictEquality(a,b){
+  if(a!==b){
+    return "Strictly not equal";
+  }
+  return "strictly Equal";
+}
+console.log(checkStrictEquality(10, '10')); //not
+
+function checkStrictEquality2(a,b){
+  if(a!==b){
+    return "Strictly not equal";
+  }
+  return "strictly Equal";
+}
+console.log(checkStrictEquality2(10, 10)); //Equal
+
+
+//comparison with greater than operator
+// 5   >  3    true
+// 7   > '3'   true
+// 2   >  3    false
+// '1' >  9    false
+function testGreaterThan(val) {
+  if (val>100) { 
+    return "Over 100";
+  }
+  if (val >10 ) { 
+    return "Over 10";
+  }
+  return "10 or Under";
+}
+console.log(testGreaterThan(200)); //over 100
+
+//using greater than / equal to 
+//6   >=  6    true
+//7   >= '3'   true
+//2   >=  3    false
+//'7' >=  9    false
+
+function testGreaterOrEqual(val) {
+  if (val>=20) {  
+    return "20 or Over";
+  }
+  if (val>=10) {
+    return "10 or Over";
+  }
+  return "Less than 10";
+}
+console.log(testGreaterOrEqual(50));
+
+
+function gradingMarks(marks){
+  if(marks>=80){
+    return "Good";
+  }
+  if(marks>=60){
+    return "Trial";
+  }
+  return "Failure";
+}
+console.log(gradingMarks(10)); //failure
+
+//comaprison with lessThan operator;
+//2   < 5   true
+//'3' < 7   true
+//5   < 5   false
+//3   < 2   false
+//'8' < 4   false
+function testLessThan(val) {
+  if (val<25) {  
+    return "Under 25";
+  }
+  if (val<55) {  
+    return "Under 55";
+  }
+  return "55 or Over";
+}
+console.log(testLessThan(10)); // under 25
+
+//Less/ EqualTo
+function testLessOrEqual(val) {
+  if (val<=12) { 
+    return "Smaller Than or Equal to 12";
+  }
+  if (val<=24) { 
+    return "Smaller Than or Equal to 24";
+  }
+  return "More Than 24";
+}
+testLessOrEqual(10);
+
+
+//comparison with Logical and Operator &&

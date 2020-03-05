@@ -768,3 +768,50 @@ testLessOrEqual(10);
 
 
 //comparison with Logical and Operator &&
+//comparison with Logical and Operator &&
+//checks if the number's logic is satisfied
+//or operator return a True when either of the values are true otherwise false;
+//Else statemets. Execute next command if the value is false, others true
+if (num > 5 && num < 10) {
+  return "Yes";
+}
+return "No"; 
+
+function testLogicalAnd(val) {
+  if (val >5 && val <20) {
+      return "Yes";
+  }
+  return "No";
+}
+console.log(testLogicalAnd(100)); // No
+
+function tester(num){
+  if(num> 2 && num < 5){
+    return "yeeeeees";
+  }
+  return "Noo";
+}
+console.log(tester(3)); //yes
+
+function testLogicalAnd(val) {
+  if (val <=50 && val >=25) {
+      return "Yes";
+  }
+  return "No";
+}
+console.log(testLogicalAnd(0)); // No
+console.log(testLogicalAnd(24)); // No
+console.log(testLogicalAnd(25)); // Yes
+console.log(testLogicalAnd(30)); // yes
+console.log(testLogicalAnd(50)); // yes
+console.log(testLogicalAnd(51)); // No
+console.log(testLogicalAnd(75)); // No
+console.log(testLogicalAnd(80)); // No
+
+//logical or operator:
+if (num > 10 || num < 5) {
+  return "No";
+}
+return "Yes";
+
+//If Else statemments

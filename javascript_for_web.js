@@ -979,3 +979,71 @@ console.log(golfScore(2, 10)); // Go Home
 
 
 //UPNEXT: using Switch statements:
+//UP -NEXT: using Switch statements:
+//Switch enables multiple selection choice.executions continues until BREAK statement is reached where execution stops
+//Switch statements are strictly executed with === and break tells js to stop executing the statement at hand
+//adding of default values in switch case; useful incase there is no  matching case in the statement
+switch (educationLevel) {
+    case "kid":
+        console.log("Nursery");
+        break;
+    case "Youth":
+        console.log("primary");
+        break;
+    case "student":
+        console.log("secondary");
+}
+
+function caseInSwitch(val) {
+    var answer = "";
+    switch (val) {
+        case 1:
+            console.log("alpha");
+            break;
+        case 2:
+            console.log("beta");
+            break;
+        case 3:
+            console.log("gamma");
+            break;
+        case 4:
+            console.log("delta");
+            break;
+    }
+    return answer;
+}
+caseInSwitch(3);
+
+function caseInSwitch(val) {
+    var answer = "";
+    switch (val) {
+        case 1:
+            answer = "alpha";
+            break;
+        case 2:
+            answer = "beta";
+            break;
+        case 3:
+            answer = "gamma";
+            break;
+        case 4:
+            answer = "delta";
+            break;
+    }
+    return answer;
+}
+console.log(caseInSwitch(3));
+
+//default values
+switch (mpesa) {
+    case value1:
+        statement1;
+        break;
+    case value2:
+        statement2;
+        break;
+        //more switch cases continues ....
+    default:
+        defaultStatement;
+        break;
+}

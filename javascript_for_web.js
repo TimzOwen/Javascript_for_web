@@ -814,4 +814,168 @@ if (num > 10 || num < 5) {
 }
 return "Yes";
 
-//If Else statemments
+//UP-NEXT: 
+//If Else statements.
+//This are statements used to make decision based on the concept being measured or compared to
+//else if. multidimensional choice when we have many values to choose from
+//logical order in if/else statements. statements are executed from top to bottom so oder is important
+//Chaining if statements. useful when we have multiple if else statements to check from
+//To wrap up we will build a golf game:
+
+
+
+if (num > 10) {
+    return "Bigger than 10";
+} else {
+    return "10 or Less";
+}
+
+function testElse(val) {
+    var result = "";
+    if (val > 5) {
+        result = "Bigger than 5";
+    } else {
+        result = "5 or smaller";
+    }
+    return result;
+}
+console.log(testElse(4));
+
+//Else if statements
+if (num > 15) {
+    return "Bigger than 15";
+} else if (num < 5) {
+    return "Smaller than 5";
+} else {
+    return "Between 5 and 15";
+}
+
+
+function testElseIf(val) {
+    if (val > 10) {
+        return "Greater than 10";
+    } else if (val < 5) {
+        return "Smaller than 5";
+    } else {
+        return "Between 5 and 10";
+    }
+}
+testElseIf(7);
+
+//logical order: look at this 2 examples which shows how significant order is
+//Ex1:
+function foo(x) {
+    if (x < 1) {
+        return "Less than one";
+    } else if (x < 2) {
+        return "Less than two";
+    } else {
+        return "Greater than or equal to two";
+    }
+}
+console.log(foo(0)) //returns less than 1
+
+//Ex2:
+function bar(x) {
+    if (x < 2) {
+        return "Less than two";
+    } else if (x < 1) {
+        return "Less than one";
+    } else {
+        return "Greater than or equal to two";
+    }
+}
+console.log(bar(0)) //returns less than 2
+
+//correct oder:
+function orderMyLogic(val) {
+    if (val < 5) {
+        return "Less than 5";
+    } else if (val < 10) {
+        return "Less than 10";
+    } else {
+        return "Greater than or equal to 10";
+    }
+}
+
+console.log(orderMyLogic(7));
+console.log(orderMyLogic(4)) // less than 5
+console.log(orderMyLogic(8)) // less than 10
+console.log(orderMyLogic(12)) //greater/equal to 10;
+
+//chaining if else;
+if (condition1) {
+    statement1
+} else if (condition2) {
+    statement2
+} else if (condition3) {
+    statement3
+} else if (condition4) {
+
+    //and conditions continues
+} else {
+    statementN
+}
+
+function testSize(num) {
+    if (num < 5) {
+        return "Tiny";
+    } else if (num < 10) {
+        return "Small";
+    } else if (num < 15) {
+        return "Medium";
+    } else if (num < 20) {
+        return "Large";
+    } else if (num >= 20) {
+        return "Huge"
+    } else {
+        return "Change Me";
+    }
+}
+console.log(testSize(7)); //small
+console.log(testSize(18)); //medium
+
+//The game:In the game of golf each hole has a par meaning 
+// the average number of strokes a golfer is expected to make in
+//order to sink the ball in a hole to complete the play.Depending
+// on how far above or below par your strokes are, there is a different nickname.
+// Your function will be passed par and strokes arguments.
+// Return the correct string according to this table
+// which lists the strokes in order of priority;
+// top(highest) to bottom(lowest):Strokes	Return
+
+
+// 1 "Hole-in-one!"
+// <=par - 2 "Eagle"
+// par - 1 "Birdie"
+// par "Par"
+// par + 1 "Bogey"
+// par + 2 "Double Bogey"
+// >=  par + 3 "Go Home!"
+var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+    if (strokes == 1) {
+        return name[0];
+    } else if (strokes <= par - 2) {
+        return names[1];
+    } else if (strokes == par - 1) {
+        return names[2];
+    } else if (strokes == par) {
+        return names[3];
+    } else if (strokes == par + 1) {
+        return names[4];
+    } else if (strokes == par + 2) {
+        return names[5];
+    } else if (strokes => par + 3) {
+        return names[6];
+    } else {
+        return "Change Me";
+    }
+}
+console.log(golfScore(5, 4)); // Birdie
+console.log(golfScore(8, 2)); // Eagle
+console.log(golfScore(2, 10)); // Go Home
+
+
+//UPNEXT: using Switch statements:

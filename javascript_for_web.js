@@ -1199,3 +1199,56 @@ console.log(chainToSwitch(7));
 
 
 //UP-NEXT : Returning boolean values from functions;
+//Returning boolean values in comparison statements
+//Returning early function.When a return statement is reached, the execution of the current function stops and control returns to the calling location.
+//Ex1
+function isEqual(a,b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//can be simplified as 
+function isEqual(a,b) {
+  return a === b;
+}
+console.log(isEqual(10,10)); // True;
+
+//Quiz: change to use return values
+function isLess(a,b){
+	if(a<b){
+		return "True";
+	}
+	else{
+		return "False";
+	}
+}
+//Solutions
+function isLess(a, b) {
+  // Only change code below this line
+return a<b;
+  } 
+  // Only change code above this line
+console.log(isLess(10,15));
+
+
+//early returning
+function myEarlyFuncton() {
+  console.log("I am returned First");
+  return "World";
+  console.log("I am never return because return has already been called");
+}
+myFun(); 
+
+
+// Stops executing if a/b are less than 0
+function abTest(a, b) {
+if(a<0 || b <0){
+  return;
+}
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+console.log(abTest(2,2));

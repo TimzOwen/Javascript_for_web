@@ -1308,3 +1308,36 @@ console.log(cc('A')); // Bet
 
 //UPNEXT
 // JAVASCRIPT OBJECTS
+//Objects are similar to arrays but now accessed using properties
+//Accessing objects with the Dot notations. Can be accessed using .dot(.) or bracket notation ([])
+var Horse = {
+    "name": "SpeedRunner",
+    "legs": 4,
+    "tails": 1,
+    "enemies": ["Lion", "Dogs"]
+};
+//or can ommit double quotes as js will cast them automatically
+var objectTwo = {
+    make: "BMW",
+    4: "four",
+    "model": "bme 3201"
+};
+//Ex3
+var myDog = {
+    name: "Simba",
+    legs: 4,
+    tails: 1,
+    friends: ["Peter", "owen", "Njoroge"]
+};
+console.log(myDog);
+
+//Accessing objects
+//Ex1
+var myValues = {
+    prop1: "value 1",
+    prop2: "value 2"
+};
+var prop1val = myValues.prop1;
+var prop2val = myValues.prop2;
+console.log(prop1val);
+console.log(prop2val); //value 2

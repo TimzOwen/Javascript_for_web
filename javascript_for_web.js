@@ -1341,3 +1341,42 @@ var prop1val = myValues.prop1;
 var prop2val = myValues.prop2;
 console.log(prop1val);
 console.log(prop2val); //value 2
+
+//with dot(.) value
+var myClothings = {
+    "shirt": "Apolo",
+    "Trouser": "Don't touch",
+    "shoes": "boots"
+}
+var accessingShirt = console.log(myClothings.shirt); //Apolo
+var accessingShoe = console.log(myClothings.shoes); //boots
+
+//Accessing with bracket notation[];
+var myLaptops = {
+    "Space Name": "Toshiba",
+    "More Space": "oldSchool",
+    "NoSpace": "Latest Technology"
+};
+console.log(myLaptops["Space Name"]); // Kirk
+console.log(myLaptops['More Space']); // Spock
+console.log(myLaptops["NoSpace"]); // USS Enterprise
+
+//using[]
+var testObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+};
+var entreeValue = console.log(testObj["an entree"]);
+var drinkValue = console.log(testObj["the drink"]);
+
+var myObj = {
+    "Space Name": "Kirk",
+    "More Space": "Spock",
+    "NoSpace": "USS Enterprise"
+};
+myObj["Space Name"]; // Kirk
+myObj['More Space']; // Spock
+myObj["NoSpace"]; // USS Enterprise
+
+//accessing with variables

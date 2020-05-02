@@ -1379,4 +1379,53 @@ myObj["Space Name"]; // Kirk
 myObj['More Space']; // Spock
 myObj["NoSpace"]; // USS Enterprise
 
-//accessing with variables
+//accessing with variables and updating them// Setup
+var myDog = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+
+console.log(myDog.name = "Happy Coder");
+
+//Adding new properties to js objects 
+var myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+
+console.log(myDog["bark"] = "woof");
+console.log(myDog.run = "Faster");
+
+//Deleting properties of objects in js
+// Setup
+var myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
+};
+delete myDog.legs;
+console.log(myDog)
+console.log(myDog)
+
+//Using Objects for look ups
+var alpha = {
+    1: "Z",
+    2: "Y",
+    3: "X",
+    4: "W",
+    ...
+    24: "C",
+    25: "B",
+    26: "A"
+};
+alpha[2]; // "Y"
+alpha[24]; // "C"
+
+var value = 2;
+alpha[value]; // "Y"
